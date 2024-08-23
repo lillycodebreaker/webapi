@@ -11,6 +11,7 @@ namespace webapi.Controllers
 	[ApiController]
 	public abstract class BaseController : Controller
     {
+    		private readonly ListDbCall dbCall;
 		private readonly LoggerDbCall loggerDbCall;
 		private readonly AuditDbCall auditDbCall;
 		private readonly IMapper mapper;
